@@ -63,6 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Keypad\Script\Playsound.cs" />
+    <Compile Include="Assets\Objects\Clock\Scripts\Clock.cs" />
+    <Compile Include="Assets\Scripts\KeypadController.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
