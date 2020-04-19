@@ -288,6 +288,7 @@
 /define:CSHARP_7_3_OR_NEWER
 "Assets/Keypad/Script/Playsound.cs"
 "Assets/Objects/Clock/Scripts/Clock.cs"
-"Assets/Scripts/Keypad.cs"
+"Assets/Scripts/CodeLock.cs"
+"Assets/Scripts/KeypadController.cs"
 "Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/PlayerMovement.cs"

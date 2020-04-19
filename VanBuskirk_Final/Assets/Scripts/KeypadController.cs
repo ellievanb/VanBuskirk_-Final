@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class KeypadController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    CodeLock codeLock;
 
-    // Update is called once per frame
+    int reachRange = 100;
+
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            CheckHitObj();
+        }
+    }
+
+    void CheckHitObj()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit, reachRange))
+        {
+            codeLock = hit.transform.gameObject.GetComponentInParent<CodeLock>();
+
+            if (codeLock != null)
+            {
+                string value = hit.transform.name;
+                codeLock.SetValue(value);
+            }
+        }
     }
 }
