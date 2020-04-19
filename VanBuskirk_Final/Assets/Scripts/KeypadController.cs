@@ -6,6 +6,10 @@ public class KeypadController : MonoBehaviour
 {
     CodeLock codeLock;
 
+    public KeypadController()
+    {
+    }
+
     int reachRange = 100;
 
     void Update()
