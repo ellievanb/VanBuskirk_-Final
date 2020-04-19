@@ -36,7 +36,7 @@ public class SelectedFlash : MonoBehaviour
         startedFlashing = false;
         lookingAtObject = false;
         StopCoroutine(FlashObject());
-        selectedObject.GetComponent<Renderer>().material.color = new Color32(255, 255, 255, 255);
+        selectedObject.GetComponent<Renderer>().material.color = new Color32(115, 115, 115, 255);
     }
 
     IEnumerator FlashObject()
