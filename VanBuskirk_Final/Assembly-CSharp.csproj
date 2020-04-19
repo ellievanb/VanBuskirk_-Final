@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CodeLock.cs" />
     <Compile Include="Assets\Objects\Clock\Scripts\Clock.cs" />
+    <Compile Include="Assets\Scripts\CodeLock.cs" />
     <Compile Include="Assets\Scripts\KeypadController.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
