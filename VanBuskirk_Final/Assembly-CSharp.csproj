@@ -66,6 +66,7 @@
     <Compile Include="Assets\Objects\Clock\Scripts\Clock.cs" />
     <Compile Include="Assets\Scripts\CastingToObj.cs" />
     <Compile Include="Assets\Scripts\CodeLock.cs" />
+    <Compile Include="Assets\Scripts\Countdown.cs" />
     <Compile Include="Assets\Scripts\DialogueSystem.cs" />
     <Compile Include="Assets\Scripts\KeypadController.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
