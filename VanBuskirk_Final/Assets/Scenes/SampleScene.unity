@@ -2269,6 +2269,7 @@ GameObject:
   - component: {fileID: 886525596}
   - component: {fileID: 886525597}
   - component: {fileID: 886525598}
+  - component: {fileID: 886525599}
   m_Layer: 0
   m_Name: First Person Player
   m_TagString: Untagged
@@ -2357,6 +2358,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa89b7e2df4934106a022e47b9738db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &886525599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886525593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb9a4e2ede104d0faf97fa1f945b2b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  internalObject: 
 --- !u!1 &957782859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,7 +2595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1310.3, y: 612.8}
+  m_AnchoredPosition: {x: 1315, y: 705}
   m_SizeDelta: {x: 173.13, y: 141.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001787600
@@ -3424,6 +3438,7 @@ GameObject:
   - component: {fileID: 1505829476}
   - component: {fileID: 1505829475}
   - component: {fileID: 1505829474}
+  - component: {fileID: 1505829477}
   m_Layer: 0
   m_Name: CodeKeyLock
   m_TagString: Untagged
@@ -3518,6 +3533,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505829472}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &1505829477
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505829472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1589324508
 GameObject:
@@ -5069,6 +5098,7 @@ GameObject:
   - component: {fileID: 6884862975158099135}
   - component: {fileID: 2508606828460138540}
   - component: {fileID: 2508606828460138539}
+  - component: {fileID: 2508606828460138541}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -5103,6 +5133,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -2432090755550338912, guid: 164de31c7a3a6488faaa3e8921e55442, type: 3}
+--- !u!114 &2508606828460138541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2508606828460138538}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf64fa40ba31a404c923508195281b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 2508606828460138538}
+  redCol: 0
+  blueCol: 0
+  greenCol: 0
+  lookingAtObject: 0
+  flashingIn: 1
+  startedFlashing: 0
 --- !u!33 &2517662596675503058
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5713,7 +5762,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0409b829e8b1b4d85b8c433c68b20893, type: 2}
+  - {fileID: 2100000, guid: f41a0ca16d62a4989aa0a8b6faf2e5b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
