@@ -8,7 +8,7 @@ public class Countdown : MonoBehaviour
     float currentTime = 0f;
     float startingTime = 60f;
 
-    [SerializeField] Text countdownText;
+    public UnityEngine.UI.Text countdownText;
 
     void Start()
     {

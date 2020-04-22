@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 449303078}
   - component: {fileID: 449303077}
   m_Layer: 0
-  m_Name: Under
+  m_Name: Under Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 525422309}
   - component: {fileID: 525422308}
   m_Layer: 0
-  m_Name: Above
+  m_Name: Above Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1375,7 +1375,7 @@ GameObject:
   - component: {fileID: 595709170}
   - component: {fileID: 595709169}
   m_Layer: 0
-  m_Name: Behind
+  m_Name: Back Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1652,7 +1652,7 @@ GameObject:
   - component: {fileID: 673744584}
   - component: {fileID: 673744583}
   m_Layer: 0
-  m_Name: Left
+  m_Name: Left Window Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2177,7 +2177,7 @@ GameObject:
   - component: {fileID: 825150178}
   - component: {fileID: 825150177}
   m_Layer: 0
-  m_Name: Right
+  m_Name: Right Window Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3439,6 +3439,7 @@ GameObject:
   - component: {fileID: 1505829475}
   - component: {fileID: 1505829474}
   - component: {fileID: 1505829477}
+  - component: {fileID: 1505829478}
   m_Layer: 0
   m_Name: CodeKeyLock
   m_TagString: Untagged
@@ -3485,7 +3486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf6a9c514c5646d6bfe831b28bd7b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  code: 1215
+  code: 12
   attemptedCode: 
   toOpen: {fileID: 1589324509}
 --- !u!23 &1505829475
@@ -3548,6 +3549,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1505829478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505829472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf64fa40ba31a404c923508195281b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 1505829472}
+  redCol: 0
+  blueCol: 0
+  greenCol: 0
+  lookingAtObject: 0
+  flashingIn: 1
+  startedFlashing: 0
 --- !u!1 &1589324508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3908,7 +3928,7 @@ GameObject:
   - component: {fileID: 1789663554}
   - component: {fileID: 1789663553}
   m_Layer: 0
-  m_Name: Behind (1)
+  m_Name: Back Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4663,7 +4683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06cc9db3fafc749f08be08325891c482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownText: {fileID: 0}
+  countdownText: {fileID: 1001787600}
 --- !u!1 &2114699303
 GameObject:
   m_ObjectHideFlags: 0
