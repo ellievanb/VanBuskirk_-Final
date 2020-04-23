@@ -22,7 +22,7 @@ public class SelectedFlash : MonoBehaviour
 
     void OnMouseOver()
     {
-        selectedObject = GameObject.Find(CastingToObj.selectedObject);
+        //selectedObject = GameObject.Find(CastingToObj.selectedObject);
         lookingAtObject = true;
         if(startedFlashing == false)
         {
