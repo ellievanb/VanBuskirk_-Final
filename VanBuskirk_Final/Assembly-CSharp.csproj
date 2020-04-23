@@ -73,6 +73,8 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PopUpText.cs" />
     <Compile Include="Assets\Scripts\SelectedFlash.cs" />
+    <Compile Include="Assets\Scripts\SelectedFlash_Black.cs" />
+    <Compile Include="Assets\Scripts\SelectedFlash_Grey.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/ellievanbuskirk/Desktop/VanBuskirk_Final/VanBuskirk_Final/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
