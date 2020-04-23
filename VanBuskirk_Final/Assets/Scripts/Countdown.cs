@@ -17,12 +17,12 @@ public class Countdown : MonoBehaviour
 
     void Update()
     {
-        //currentTime -= 1 * Time.deltaTime;
-        //countdownText.text = currentTime.ToString("0");
+        currentTime -= 1 * Time.deltaTime;
+        countdownText.text = currentTime.ToString("0");
 
-        //if (currentTime <= 0)
-        //{
-        //    currentTime = 0;
-        //}
+        if (currentTime <= 0)
+        {
+            currentTime = 0;
+        }
     }
 }

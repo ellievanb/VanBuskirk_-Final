@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Text : MonoBehaviour
+public class PopUpText : MonoBehaviour
 {
     public GameObject objectToDisable;
     public static bool disabled = false;
