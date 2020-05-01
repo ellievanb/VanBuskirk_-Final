@@ -73,6 +73,8 @@
     <Compile Include="Assets\Scripts\GameEnding.cs" />
     <Compile Include="Assets\Scripts\GoAway.cs" />
     <Compile Include="Assets\Scripts\KeypadController.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\OpenUpText.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
