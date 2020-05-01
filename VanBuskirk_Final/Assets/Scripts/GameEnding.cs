@@ -7,34 +7,38 @@ public class GameEnding : MonoBehaviour
     public float fadeDuration = 1f;
     public float displayImageDuration = 1f;
     public GameObject player;
-    public Canvas exitBackgroundImageCanvas;
+    public CanvasGroup exitBackgroundImageCanvasGroup;
+    public GameObject countdown;
 
-    bool m_IsPLayerAtExit;
+    bool m_IsPlayerAtExit;
     float m_Timer;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if(other.gameObject == player)
         {
-            m_IsPLayerAtExit = true;
+            m_IsPlayerAtExit = true;
         }
     }
 
     void Update()
     {
-        if(m_IsPLayerAtExit)
+        if(m_IsPlayerAtExit)
         {
             EndLevel();
         }
     }
 
-    void EndLevel ()
+    void EndLevel()
     {
         m_Timer += Time.deltaTime;
-        exitBackgroundImageCanvas.alpha = m_Timer / fadeDuration;
+        exitBackgroundImageCanvasGroup.alpha = m_Timer / fadeDuration;
+
+        countdown.SetActive(false);
+
         if (m_Timer > fadeDuration + displayImageDuration)
         {
-            Application.Quit();
+            Debug.Log("Win");
         }
     }
 }

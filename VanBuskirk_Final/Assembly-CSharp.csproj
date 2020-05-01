@@ -68,9 +68,13 @@
     <Compile Include="Assets\Scripts\CodeLock.cs" />
     <Compile Include="Assets\Scripts\Countdown.cs" />
     <Compile Include="Assets\Scripts\DialogueSystem.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyAudio.cs" />
+    <Compile Include="Assets\Scripts\EndScript.cs" />
     <Compile Include="Assets\Scripts\GameEnding.cs" />
+    <Compile Include="Assets\Scripts\GoAway.cs" />
     <Compile Include="Assets\Scripts\KeypadController.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\OpenUpText.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PopUpText.cs" />
     <Compile Include="Assets\Scripts\SelectedFlash.cs" />

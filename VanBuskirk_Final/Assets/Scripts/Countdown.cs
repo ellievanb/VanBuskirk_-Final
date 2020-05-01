@@ -7,12 +7,14 @@ public class Countdown : MonoBehaviour
 {
     float currentTime = 0f;
     float startingTime = 60f;
+    public GameObject lose;
 
     public UnityEngine.UI.Text countdownText;
 
     void Start()
     {
         currentTime = startingTime;
+        lose.SetActive(false);
     }
 
     void Update()
@@ -23,6 +25,7 @@ public class Countdown : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
+            lose.SetActive(true);
         }
     }
 }
